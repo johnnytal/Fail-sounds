@@ -42,5 +42,3 @@ function onResume(){
         }catch(e){}   
     }, 1000);
 }
-
-

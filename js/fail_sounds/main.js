@@ -460,18 +460,10 @@ function tweenDidYouKnow(thing){
 }
 
 function initAd(){
-    var admobid = {};
-
-    admobid = {
-        banner: 'ca-app-pub-9795366520625065/8436008634'
-    };
-    
-    try{
-        if(AdMob) AdMob.createBanner({
-           adId: admobid.banner,
-           position: AdMob.AD_POSITION.BOTTOM_CENTER,
-           autoShow: true,
-           isTesting:false
-        });
-    } catch(e){}
+    if(AdMob) AdMob.createBanner({
+       adId: 'ca-app-pub-9795366520625065/8436008634',
+       position: AdMob.AD_POSITION.BOTTOM_CENTER,
+       autoShow: true,
+       isTesting:false
+    });
 }
